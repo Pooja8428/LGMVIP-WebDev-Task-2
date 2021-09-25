@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    background: linear-gradient(to right,#331e83, #18033f);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wholecontainer {
+    background-size: cover;
+    /* text-align: -webkit-center; */
+}
+
+.container {
+    height: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: Verdana;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .btn {
+    display: none;
+    float: right;
+    display: block;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: rgba(220, 20, 60, 0.836);
+    padding: 8px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.5s;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 1.5px white;
+    width: 10%;
+}
+
+.topnav .btn:hover {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(0, 255, 255, 0.863);
+}
+
+/* When the screen is less than 600 pixels wide */
+@media screen and (max-width: 600px) {
+    .topnav a.btn {
+        color: #f2f2f2;
+        float: right;
+        display: block;
+        width: 20%;
+        font-size: 20px;
+        padding-top: 13px;
+    }
+    .topnav .btn:hover {
+        font-size: 20px;
+    }
+    .container {
+        height: 100px;
+        text-align: -webkit-center;
+    }
+    .img{
+        width: 300px;
+        margin-right: 80px;
+    }
+}
+
+.img {
+   margin-top: 100px;
+   text-align: center;
+}
